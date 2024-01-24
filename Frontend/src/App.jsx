@@ -4,6 +4,8 @@ import LoginPage from "./pages/LoginPage";
 import DeliveryPartner from "./pages/DeliveryPartner";
 import AdminPage from "./pages/AdminPage";
 import Ordertrack from "./pages/Ordertrack";
+import Analytics from "./pages/Analytics";
+
 
 function App() {
   return (
@@ -13,6 +15,7 @@ function App() {
           <Route path='/del' element ={<DeliveryPartner/>} />
           <Route path='/admin' element ={<AdminPage/>}/>
           <Route path='/orderTrack' element ={<Ordertrack/>}/>
+          <Route path='/analytics' element={<Analytics/>}/>
       </Routes>
     </div>
   );

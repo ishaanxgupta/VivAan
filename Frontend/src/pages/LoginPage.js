@@ -1,21 +1,60 @@
 import React from 'react'
 
+
+
 function LoginPage() {
   return (
-    <div className='mt-[150px] items-center w-[100%] h-[100%] flex flex-col'>
-      <div className='font-sans font-bold text-[38px]'>Log In to your account</div>
-      <div className='mt-8 w-[100%]  items-center justify-center flex flex-col'>
-          <div className='w-[100%] flex items-center flex-col'>
-            <input className='border-black border-2 rounded-md w-[20%] text-[16px] py-2 px-3 min-w-[300px]' placeholder='Enter username'></input>
-          </div>
-          <div className='w-[100%] flex items-center flex-col'>
-            <input type='password' className='mt-2 border-black border-2 rounded-md w-[20%] text-[16px] py-2 px-3 min-w-[300px]' placeholder='Enter password'></input>
-          </div>
-          <button className='w-[20%] bg-black mt-4 py-2 px-3 rounded-md text-white min-w-[300px]'>
-            Login
-          </button>
+    <div className="h-80 z-20 bg-gradient-to-r from-purple-600 to-blue-600">
+<section className="h-screen blur-none flex flex-col md:flex-row justify-center space-y-10 md:space-y-0 md:space-x-16 items-center my-2 mx-5 md:mx-0 md:my-0">
+  <div className="md:w-1/3 max-w-sm">
+    <div className="my-5 flex items-center before:mt-0.5 before:flex-1 before:border-t before:border-neutral-300 after:mt-0.5 after:flex-1 after:border-t after:border-neutral-300">
+      <p className="mx-4 mb-0 text-center font-semibold text-stone-300">
+        SIGN IN
+      </p>
     </div>
+    <input
+      className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded"
+      type="text"
+      placeholder="Email Address"
+    />
+    <input
+      className="text-sm w-full px-4 py-2 border border-solid border-gray-300 rounded mt-4"
+      type="password"
+      placeholder="Password"
+    />
+    <div className="mt-4 flex justify-between font-semibold text-sm">
+      <label className="flex text-black-500 hover:text-slate-600 cursor-pointer">
+        <input className="mr-1" type="checkbox" />
+        <span>Remember Me</span>
+      </label>
+      <a
+        className="text-black-600 hover:text-slate-700 hover:underline hover:underline-offset-4"
+        href="#"
+      >
+        Forgot Password?
+      </a>
     </div>
+    <div className="text-center md:text-left">
+      <button
+        className="mt-4 opacity-100 bg-blue-600 hover:bg-blue-700 hover:opacity-75 px-4 py-2 text-white uppercase rounded text-xs tracking-wider"
+        type="submit"
+      >
+        Login
+      </button>
+    </div>
+    <div className="mt-4 font-semibold text-sm text-black-500 text-center md:text-left">
+      Dont have an account?{" "}
+      <a
+        className="text-red-600 hover:underline hover:underline-offset-4"
+        href="#"
+      >
+        Register
+      </a>
+    </div>
+  </div>
+</section>
+</div>
+
   )
 }
 
