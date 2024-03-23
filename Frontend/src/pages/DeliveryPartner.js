@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState,useEffect } from 'react'
 import Item from '../components/Item';
+import Navbar from '../components/Navbar';
 
 function DeliveryPartner(){
     const [data,setData] = useState([])
@@ -19,6 +20,7 @@ function DeliveryPartner(){
     })
   return (
     <div>
+        <Navbar/>
         {/* {data.length > 0 ? (data.map((dataitem) =>{<Item dataitem={dataitem}/>})):(<p>No item pending</p>)} */}
         <Item/>
     </div>

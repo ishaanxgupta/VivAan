@@ -1,6 +1,7 @@
 import React from 'react'
 import Stock from '../components/Stock'
 import DeliveryExecutive from '../components/DeliveryExecutive'
+import Navbar from '../components/Navbar';
 
 function Ordertrack() {
   const sendOrdersToDeliveryAgent = (deliveryAgentId) => {
@@ -27,6 +28,7 @@ function Ordertrack() {
   };
   return (
  <>
+ <Navbar/>
  <div className="flex justify-end py-4">
       <div className="w-1/5">
  <Stock/>

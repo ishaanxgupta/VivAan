@@ -1,9 +1,12 @@
 import React from 'react'
 import Ordertrack from './Ordertrack'
 import { NavLink } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
 function AdminPage() {
   return (
+  <>
+  <Navbar/>
     <div className='flex justify-center items-center flex-col w-[100vw] h-[100vh] gap-7'>
         <div className='w-[60%] mx-auto px-36 bg-gray-300 h-[60%] my-auto py-32 rounded-md hover:scale-105 duration-300'>
             <div className='flex justify-center items-center'>
@@ -15,6 +18,7 @@ function AdminPage() {
             </div>
         </div>
     </div>
+    </>
     
   )
 }
